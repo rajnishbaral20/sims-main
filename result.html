@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SearchStudentResult</title>
+  <link rel="stylesheet" href="assets/css/result.css">
+</head>
+
+<body>
+<center>
+    <iframe src="./TableResultStudent.html" title="description" id="framee" frameborder="0" ></iframe>
+
+</center>
+<script>
+  
+  const framee = document.getElementById("framee");
+  framee.onload = function(){
+    if(framee.contentWindow.document.body.scrollHeight < window.innerHeight){
+      framee.style.height= '100vh';
+    } else {
+      framee.style.height = framee.contentWindow.document.body.scrollHeight+100 + 'px';
+    }
+    
+
+}
+</script>
+</body>
+
+</html>

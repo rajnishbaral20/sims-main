@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SearchStudent</title>
+  <link rel="stylesheet" href="assets/css/tableRseultstudent.css">
+</head>
+
+
+<body>
+ 
+<div class="studentData">
+  <input type="string" placeholder="Roll No" id="rollNoStudent" pattern="KAT.*" required class="align-input">
+  <select id="select_faculty">
+    <option value="faculty">Select Faculty</option>
+    <option value="BCT">BCT</option>
+    <option value="BCE">BCE</option>
+    <option value="BEX">BEX</option>
+    <option value="BEL">BEL</option>
+    <option value="BEI">BEI</option>
+    <option value="BME">BME</option>
+    <option value="BAM">BAM</option>
+    <option value="BIE">BIE</option>
+    <option value="BAG">BAG</option>
+    <option value="BGE">BGE</option>
+    <option value="BAR">BAR</option>
+    <option value="BAS">BAS</option>
+    <option value="BCH">BCH</option>
+  </select>
+
+
+  <select id="select_semester">
+    <option value="semester">Select Semester</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+  </select>
+
+
+  <select id="select_section">
+    <option value="section">Select Section</option>
+    <option value="A">A</option>
+    <option value="B">B</option>
+  </select>
+
+
+  <!-- <input type="text" placeholder="Name of student" id="nameStudent" required>  -->
+  <button type="submit" id="button_search_student" >Search</button></a><br>
+  
+</div>
+<button type="submit" id="button_Add_Result" onclick="window.location.href='addResult.html'">Add Result</button></a><br>
+  <table id="show_all_students_in_table">
+    <tr>
+      <th>Roll no.</th>
+      <th>Name Of The Student</th>
+      <th>Faculty</th>
+      <th>Semester</th>
+      <th>Action</th>
+
+    </tr>
+
+
+  </table>
+
+  <script type="module" src="assets/js/tableResultStudent.js">
+  </script>
+</body>
+
+</html>

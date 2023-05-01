@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/addStudentDetails.css">
+  <title>Add Student</title>
+
+  <script>
+    function updateSemesterOptions() {
+      const facultySelect = document.getElementById('user_faculty');
+      const semesterSelect = document.getElementById('user_semester');
+      const selectedFaculty = facultySelect.value;
+
+      // Reset the options
+      semesterSelect.innerHTML = '';
+
+      const maxSemesters = selectedFaculty === 'BAR' ? 10 : 8;
+
+      for (let i = 1; i <= maxSemesters; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        semesterSelect.appendChild(option);
+      }
+
+      // Enable or disable the semester select based on faculty selection
+      semesterSelect.disabled = selectedFaculty === '';
+    }
+  </script>
+</head>
+
+<h3> Student Details</h3>
+
+
+<!-- STUDENT NAME SECTION -->
+
+
+<div id="firstname">
+  <label for="user_firstname" class="label_firstname">First Name</label></br>
+  <input type="text" name="user_firstname" id="user_firstname"/> </br>
+</div>
+
+<div id="middlename">
+  <label for="user_middlename" class="label_middlename">Middle Name</label></br>
+  <input type="text" name="user_firstname" id="user_middlename"/> </br>
+</div>
+
+<div id="lastname">
+  <label for="user_lastname" class="label_lastname">Last Name</label></br>
+  <input type="text" name="user_lastname" id="user_lastname"/></br>
+</div>
+
+<!-- STUDENT DOB -->
+
+<div id="dob">
+  <label for="user_dob" class="label_dob">Date Of Birth</label></br>
+  <input type="date" name="user_dob" id="user_dob"/> </br>
+</div>
+
+
+<!-- STUDENT gender -->
+<div id="div_gender">
+  <label for="gender" class="class_gender">Gender</label><br>
+  <select name="gender" id="gender">
+    <option value="Male" selected>Male</option>
+    <option value="Female">Female</option>
+  </select><br>
+</div>
+
+
+<!-- STUDENT ROLL NUMBER-->
+
+<!--Joined year-->
+<div id="joinyear">
+  <label for="user_joinedyear" class="label_joinedyear">Joined Year</label><br>
+  <select name="user_joinedyear" id="user_joinedyear">
+    <option value="" selected disabled>Select Year</option>
+  </select>
+</div>
+
+<script>
+  const selectJoinedYear = document.getElementById("user_joinedyear");
+  const startYear = 2060;
+  const endYear = 2080;
+
+  for (let year = startYear; year <= endYear; year++) {
+    const option = document.createElement("option");
+    option.value = year;
+    option.textContent = year;
+    selectJoinedYear.appendChild(option);
+  }
+</script>
+
+<div id="rollnumber">
+  <label for="user_longrollnumber" class="label_longrollnumber">Roll number</label></br>
+  <input type="text" name="user_longrollnumber" id="user_longrollnumber" pattern="KAT[A-Za-z0-9]{9}" required class="align-input" maxlength="12" oninput="this.value = this.value.toUpperCase();"><br>
+</div>
+
+
+<!--FACULTY-->
+<div id="faculty">
+  <label for="user_faculty" class="label_faculty">Faculty</label></br>
+    <select name="faculty" class="form-control" id="user_faculty" onchange="updateSemesterOptions()" required>
+      <option value="">Select Faculty</option>
+      <option value="BCT">BCT</option>
+      <option value="BCE">BCE</option>
+      <option value="BEX">BEX</option>
+      <option value="BEL">BEL</option>
+      <option value="BEI">BEI</option>
+      <option value="BME">BME</option>
+      <option value="BAM">BAM</option>
+      <option value="BIE">BIE</option>
+      <option value="BAG">BAG</option>
+      <option value="BGE">BGE</option>
+      <option value="BAR">BAR</option>
+      <option value="BAS">BAS</option>
+      <option value="BCH">BCH</option>
+    </select>
+  </div>
+
+  <div id="student_semester">
+    <label for="user_semester" class="label_longrollnumber">Semester</label></br>
+    <select name="semester" class="form-control" id="user_semester" disable required>
+      <option value="">Select Semester</option>
+    </select>
+  </div>
+
+  <div id="student_section">
+    <label for="user_section" class="label_longrollnumber">Section</label></br>
+    <select name="user_longrollnumber" class="form-control" id="user_section" >
+      <option value="">Select Section</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+    </select>
+  </div>
+  
+
+
+<!--STUDENT EMAIL-->
+<div id="email">
+  <label for="user_Email" class="label_Email">Email</label></br>
+  <input type="text" name="user_Email" id="user_Email"/></br>
+  
+</div>
+
+
+
+
+
+
+
+<!-- STUDENT CONTACTS -->
+<div id="contactno.">
+  <label for="user_contactnumber" class="label_contactnumber">Phone number</label></br>
+  <input type="tel" name="user_phonenumber" id="user_phonenumber" pattern="[0-9]{10}" required maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');"><br>
+</div>
+
+<!--STUDENT GUARDIANCE -->
+<div id="guardance ">
+  <label for="user_Guardiancenumber" class="label_Guardiancenumber">Guardian Phone Number</label></br>
+  <input type="tel" name="user_Guardiancenumber" id="user_Guardiancenumber" pattern="[0-9]{10}" required maxlength="10" oninput="this.value = this.value.replace(/[^0-9]/g, '');"><br>
+</div>
+
+<!-- STUDENT PROFILE PICTURE-->
+<div id="image">
+  <label for="img">Upload Profile Picture</label><br>
+  <input type="file" id="img" name="img">
+</div><br>
+
+
+<button type="submit" name="submit_details" id="submit_details">Submit</button><br>
+
+
+
+
+<script type="module" src="assets/js/addStudentDetails.js">
+</script>
+
+
+</body>
+
+</html>

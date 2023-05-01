@@ -1,0 +1,59 @@
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+
+}
+table {
+    margin: 30px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 40%;
+    table-layout: fixed;
+  }
+  
+  table th {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  table td {
+    font-size: 18px;
+    text-align: left;
+    padding: 8px;
+    vertical-align: top;
+  }
+  
+  th:first-child,
+  td:first-child {
+    width: 150px;
+  }
+/*   
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  } */
+  
+  tr:hover {
+    background-color: #d4d4d4;
+  }
+  
+  #show_all_students_result_in_table th:nth-child(1) {
+    width: 100px;
+  }
+  
+  #show_all_students_result_in_table th:nth-child(2) {
+    width: 200px;
+  }
+  
+  #show_all_students_result_in_table th:nth-child(3) {
+    width: 150px;
+  }
+  
+  .show_mark_in_table_adt2{
+        margin-top:450px;
+  }
+  .show_mark_in_table_adt3{
+        margin-top:550px;
+  }

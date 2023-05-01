@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+*
+{
+    margin: 0px; padding: 0px;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    color: #0065FF;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: #ebebeb;
+
+
+}
+
+h1 {
+    padding-left: 50px;
+    font-size: 36px;
+    font-weight:800;
+    color: #ffffff;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: left;
+    user-select: none;
+}   
+.navbar{
+    width: 30px;
+    height: 100;
+    position: fixed; 
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.nav-list{
+height: 100%;
+background-color: #323232e7;
+position: fixed;
+
+
+}
+
+.nav-list li{
+padding-top: 8px;
+margin-top: 0px;
+justify-content: center;
+}
+
+.nav-list li a {
+    padding: 0px 30px; /* Adjust the padding as needed */
+    text-decoration: none;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    width: 150px;
+    text-align: left;
+}
+
+.nav-list li a:hover {
+    background-color: #0065FF;
+    color: #ffffff; /* Change text color on hover */
+}
+
+.rightsection{
+    
+    width: 100%;
+    display: flex;
+    
+}
+
+iframe {
+   
+    height: 100vh;
+    padding-left: 250px;
+    padding-top: 20px;
+    border: none;
+}
+
+
+
+.nav-link-button-design {
+
+    margin-top: 12px;
+    height: 45px; 
+    width: 100%;
+    border-radius: 12px;
+    border:none;
+    color:#ffffff ;
+    text-align: start;
+    font-size: 17px; 
+    font-weight: 500;
+    vertical-align: middle;
+    line-height: 24px;
+}
+
+i {
+
+    padding-right: 12px;
+    line-height: 24px;
+    display: inline-flex;
+    vertical-align: top;
+    font-size:17px;
+    font-weight: 500;
+    color: #ffffff;
+    
+}
+

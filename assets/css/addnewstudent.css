@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+*{
+    margin: 0px;
+}
+
+ h1{
+        margin-top:40px;
+        font-size: 30px;
+        font-weight: 800px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    
+    .image-upload > input
+    {
+        display: none;
+      
+    }
+    
+    .image-upload img
+    {
+        width: 80px;
+        cursor: pointer;
+     margin-left: 40%;
+    }
+
+.studentname{
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.father_name{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.mother_name{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+input:focus {
+    border: 1px solid #0065FF ;
+}
+input{
+    outline: none; 
+    background-color: #ffffff;; 
+    color:#000000; 
+    font-size: 15px ;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    /* padding-top:6px; */
+    padding: 0px 16px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid rgba(1, 42, 85, 0.37);
+    border-radius: 12px;
+    margin-top: 8px;margin-bottom: 8px; margin-right: 8px;
+}
+
+/* register button  */
+
+button[type=submit] {
+    background-color: #0065FF;
+    color: #EDFFE3;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    margin-right: -600px;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 50px;
+    width: 160px;
+    border-radius: 12px;
+    border: none;
+    background-color: #0065FF;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  button[type=submit]:hover {
+    background-color: #172B4D;
+
+    color: rgba(255, 255, 255,1);
+  }
+.student_gender {
+   
+    /* align-items: center; */
+    font-family: 'Poppins', sans-serif;
+    margin-left: -330px;
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+
+
+.student_gender input {
+    width: -10px;
+}
+
+.all_gender{
+    display: flex;
+    align-items: center; 
+    font-family: 'Poppins', sans-serif;
+    margin-left:1400px;
+    
+    margin-top: -35px;
+    /* float:inline-end; */
+    /* margin-top: 8px;
+    margin-bottom: 8px; */
+   
+    font-size: 14px;
+}
+.all_gender input {
+    width: 30px;
+    display:flex;
+}
+
+
+.dob_student{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left:10px;
+    width: 100%;
+}
+
+
+.student_email{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.student_department{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.student_department select {
+    margin: 5px 0px;
+    width: 340px;
+    height: 30px;
+    overflow: hidden;
+    border: 1px solid rgba(1, 42, 85, 0.37);
+    border-radius: 12px;
+}
+.student_department option.service-small {
+    font-size: 18px;
+    
+}
+
+.phone_number{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.p_state{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.p_city{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.permanent_tel_mobile{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.p_zip{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.temp_state{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.temp_city{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.temp_zip{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.temp_tel_mobile{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h3{
+    margin-top: 20px;
+    font-size: 16px;
+    margin-left: 200px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+ label {
+    display: inline-block;
+    width: 250px;
+    color: #777777;
+    text-align: left;
+  } 
+
+
+.rollnumber{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.faculty{
+    margin-top: 10px;
+    margin-left: 10px;
+    
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.joinyear{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+.guardian{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100%;
+    
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.same_perm{
+    /* margin-top: 10px; */
+    margin-left: 10px; 
+    /* width: 2%; */ 
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.gender_student{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px; 
+  
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+#gender {
+    margin: 5px 0px;
+    width: 340px;
+    height: 30px;
+    overflow: hidden;
+    border: 1px solid rgba(1, 42, 85, 0.37);
+    border-radius: 12px;
+}
+#gender option.service-small {
+    font-size: 18px;
+    
+}
+#gender select {
+    margin: 5px 0px;
+    width: 340px;
+    height: 30px;
+    overflow: hidden;
+    border: 1px solid rgba(1, 42, 85, 0.37);
+    border-radius: 12px;
+}
+

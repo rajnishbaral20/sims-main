@@ -1,0 +1,91 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Result</title>
+  <link rel="stylesheet" href="assets/css/addresult.css">
+  <script>
+    function updateSemesterOptions() {
+      const facultySelect = document.getElementById('user_faculty');
+      const semesterSelect = document.getElementById('user_semester');
+      const selectedFaculty = facultySelect.value;
+      semesterSelect.innerHTML = '';
+      const maxSemesters = selectedFaculty === 'BAR' ? 10 : 8;
+      for (let i = 1; i <= maxSemesters; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        semesterSelect.appendChild(option);
+      }
+      semesterSelect.disabled = selectedFaculty === '';
+    }
+  </script>
+</head>
+<body>
+  <div class="filter-form">
+
+    <select id="user_faculty" onchange="updateSemesterOptions()" required>
+      <option value="Default">Select Faculty</option>
+          <option value="BCT">BCT</option>
+          <option value="BCE">BCE</option>
+          <option value="BEX">BEX</option>
+          <option value="BEL">BEL</option>
+          <option value="BEI">BEI</option>
+          <option value="BME">BME</option>
+          <option value="BAM">BAM</option>
+          <option value="BIE">BIE</option>
+          <option value="BAG">BAG</option>
+          <option value="BGE">BGE</option>
+          <option value="BAR">BAR</option>
+          <option value="BAS">BAS</option>
+          <option value="BCH">BCH</option>
+    </select>
+
+    <select id="user_semester" required>
+        <option value="semester">Select Semester</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+
+    <select id="user_section" required>
+          <option value="section">Select Section</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+    </select>
+    
+    <select id="user_subject" required>
+      <option value="">Select Subject</option>
+    </select>
+
+    <select id="user_exam_type" required>
+      <option value="">Select Test</option>
+      <option value="ADT1">ADT 1</option>
+      <option value="ADT2">ADT 2</option>
+      <option value="ADT3">ADT 3</option>
+    </select>
+
+    <button type="submit" id="button_filter_apply">Filter</button>
+    <button type="submit" id="update_result">Update Result</button>
+  </div>
+
+  <table id="show_all_students_result_in_table">
+    <tr>
+      <th>Roll No</th>
+      <th>Student Name</th>
+      <th>Marks</th>
+    </tr>
+  </table>
+
+
+
+  <script type="module" src="assets/js/addResult.js"></script>
+</body>
+</html>

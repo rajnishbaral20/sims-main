@@ -1,0 +1,94 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Upload Notice</title>
+          <link rel="stylesheet" href="assets/css/addsubject.css">
+          <script>
+            function updateSemesterOptions() {
+              const facultySelect = document.getElementById('faculty');
+              const semesterSelect = document.getElementById('semester');
+              const selectedFaculty = facultySelect.value;
+        
+              // Reset the options
+              semesterSelect.innerHTML = '';
+        
+              const maxSemesters = selectedFaculty === 'BAR' ? 10 : 8;
+        
+              for (let i = 1; i <= maxSemesters; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.textContent = i;
+                semesterSelect.appendChild(option);
+              }
+        
+              // Enable or disable the semester select based on faculty selection
+              semesterSelect.disabled = selectedFaculty === '';
+            }
+          </script>
+        </head>
+        
+        <body>
+          <div class="main-page">
+            <div class="container">
+              <h2 class="title">Subject Creation</h2>
+           
+              
+                <div class="form-group">
+                  <label for="subjectname">Subject Name</label>
+                  <input type="text" name="subjectname" class="form-control" id="subject_name" placeholder="Subject Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="subjectcode">Subject Code</label>
+                  <input type="text" name="subjectcode" class="form-control" id="subject_code" placeholder="Subject Code" required>
+                </div>
+                <div class="form-group">
+                  <label for="faculty">Faculty</label>
+                  <select name="faculty" class="form-control" id="faculty" onchange="updateSemesterOptions()" required>
+                    <option value="">Select Faculty</option>
+                    <option value="BCT">BCT</option>
+                    <option value="BCE">BCE</option>
+                    <option value="BEX">BEX</option>
+                    <option value="BEL">BEL</option>
+                    <option value="BEI">BEI</option>
+                    <option value="BME">BME</option>
+                    <option value="BAM">BAM</option>
+                    <option value="BIE">BIE</option>
+                    <option value="BAG">BAG</option>
+                    <option value="BGE">BGE</option>
+                    <option value="BAR">BAR</option>
+                    <option value="BAS">BAS</option>
+                    <option value="BCH">BCH</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="semester">Semester</label>
+                  <select name="semester" class="form-control" id="semester" disabled required>
+                    <option value="">Select Semester</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success" id="btn_submit">Add Subject</button>
+                </div>
+            </div>
+          </div>
+
+             <!-- Display success or error message -->
+             <div class="alert alert-success" role="alert" id="succcess">
+                Subject created successfully!
+              </div>
+              <div class="alert alert-danger" role="alert" id="oops">
+                Oops! Something went wrong. Please try again.
+              </div>
+        
+        
+          <script type="module" src="assets/js/addSubject.js">
+        </script>
+        
+        </body>
+        
+        </html>
+

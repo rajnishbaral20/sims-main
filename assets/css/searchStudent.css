@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+* {
+  margin: 0px;
+} 
+
+#framee{
+  width: 100%;
+  margin-top:40px;
+  
+
+}
+
+
+button[type=submit] {
+  background-color: #0065FF;
+  color: #EDFFE3;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 160px;
+  border-radius: 12px;
+  border: none;
+  background-color: #0065FF;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button[type=submit]:hover {
+  background-color: #0066ff;
+  color: rgba(0, 0, 0, 0.39);
+}
+
+
+input {
+  margin-left: 46px;
+  margin-top: 40px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 172PX;
+  height: 50px;
+  border: 1.5px solid rgba(1, 42, 85, 0.37);
+  border-radius: 12px;
+  float: left;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  padding: 0px 16px;
+}
+
+input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #033f9888;
+}
+
+input:focus {
+  border: 1px solid #0065FF;
+}
+
+
+ 
+#button_search_student {
+ 
+  margin-left:30px ; 
+  border: none;
+  float: left;
+  margin-top: 40px;
+  background-color: #0065FF;
+  color: #EDFFE3;
+  padding: 12px 20px;
+  cursor: pointer;
+  height: 50px;
+  width: 160px;
+  border-radius: 12px;
+  background-color: #0065FF;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#button_search_student:hover
+  {
+    background-color: #172B4D;
+  
+    color: rgba(255, 255, 255,1);
+  }
+
+
+#div_searching{
+  margin-top: 30px;
+  margin-left: 115px; 
+
+}
+/* 15.5,24 */
+#button_add_student {
+  margin-right: 4%;
+  margin-top: 24px;
+  background-color: #0065FF;
+  color: #EDFFE3;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  height: 50px;
+  width: 160px;
+  border-radius: 12px;
+  border: none;
+  background-color: #0065FF;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#button_add_student:hover {
+  background-color: #172B4D;
+
+  color: rgba(255, 255, 255,1);
+}
+
+select {
+  margin-left: 46px;
+  margin-top: 40px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 172px;
+  height: 50px;
+  border: 1.5px solid rgba(1, 42, 85, 0.37);
+  border-radius: 12px;
+  float: left;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  padding: 0px 16px;
+}
+
+select::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #033f9888;
+}
+
+select:focus {
+  border: 1px solid #0065FF;
+}

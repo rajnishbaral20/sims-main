@@ -1,0 +1,98 @@
+body{
+    background-color: #ebebeb;
+  }
+  table {
+      border-collapse: collapse;
+      border-spacing: 300px;
+      width: 100%;
+      margin-left: 46px;
+  
+    }
+    
+    table th {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600px;
+      height: 50px;
+    
+    
+    }
+    
+    table td {
+    font-size: 21px;
+    font-family: 'Poppins', sans-serif;
+    
+    }
+    
+    
+    
+    table th,
+    td {
+      text-align: left;
+      font-family: 'Poppins', sans-serif;
+      padding: 8px;
+      font-size: 21px;
+      cursor: default;
+      margin: auto;
+    }
+    
+    /* for making zebra style strpie in table */
+    tr:nth-child(even) {
+      background-color: #42424217;
+    }
+    
+    tr:hover {
+      background-color: #0000001e;
+    }
+    
+    button[type=submit] {
+      background-color: #0065FF;
+      color: #EDFFE3;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      height: 40px;
+      width: 100px;
+      border-radius: 12px;
+      border: none;
+      background-color: #0065FF;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      display: inline-flex;
+    justify-content: center;
+         align-items: center;
+        
+    }
+    
+    button[type=submit]:hover {
+      background-color: #172B4D;
+      color: rgba(255, 255, 255,1);
+    }
+
+    #button_delete_notice
+    {
+        background-color: #ff0000;
+        color: #EDFFE3;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+        border-radius: 12px;
+        border: none;
+        background-color: #ff0000;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+        display: inline-flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center;
+    text-decoration: none;
+    }
+    #button_delete_notice:hover
+    {
+        background-color: #4d1717;
+        color: rgba(255, 255, 255,1);
+    }

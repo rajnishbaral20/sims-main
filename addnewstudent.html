@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/addnewstudent.css">
+    <title>Student Details</title>
+    
+</head>
+
+<body>
+    <center>
+        <h1>KEC COLLEGE</h1><br><br>
+       
+    </center>
+          <form>
+            <center>
+                <div class="image-upload">
+                    <label for="file-input">
+                        <img src="/assets/images/upload.png">
+                    </label>
+                
+                    <input id="file-input" type="file"/>
+                </div>
+
+               
+                <div class="studentname">
+                    <label for="firstname">Student Name:</label>
+                    <input type="text" name="full_name" id="student_full_name" placeholder="Student Full Name">
+                </div>
+
+
+                <div class="father_name">
+                    <label for="username">Father's Name:</label>
+                    <input type="text" name="username" id="student_father_name" placeholder="Father's Full Name">
+                </div>
+
+                <div class="mother_name">
+                    <label for="username">Mother's Name:</label>
+                    <input type="text" name="username" id="student_mother_name" placeholder="Mother's Full Name">
+                </div>
+                <div class="dob_student">
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" name="DOB" id="date_of_birth_student">
+                </div>
+
+
+                
+                <div class="gender_student">
+                    <label for="Gender">Gender:</label>
+                    <select name= "gender" id="gender">
+                        <option value= "male" class="service-small">Male</option>
+                        <option value= "female" class="service-small">Female</option>
+                        <option value= "other" class="service-small">Other</option>
+                    </select>
+                    </div>
+
+
+                    <div class="rollnumber">
+                        <label for="user_longrollnumber" class="label_longrollnumber">Roll number:</label>
+                        <input type="rollnumber" name="user_longrollnumber" id="user_longrollnumber" placeholder=" Eg: KAT076060"> </br>
+                      </div>
+
+
+                      <div class="faculty">
+                        <label for="user_faculty" >Faculty:</label>
+                        <input type="faculty" name="user_faculty" id="user_faculty"> 
+                      </div>
+
+                      <div class="joinyear">
+                        <label for="user_joinedyear" >Join year:</label>
+                        <input type="joinedyear" name="user_joinedyear" id="user_joinedyear" > 
+                      </div>
+
+                      <div class="guardian">
+                        <label for="user_Guardiancenumber" >Guardian Contact No.</label>
+                        <input type="text" name="user_Guardiancenumber" id="user_Guardiancenumber">
+                      </div>
+                <div class="student_email">
+                    <label for="username">E-mail:</label>
+                    <input type="username" name="email" id="email" placeholder="example@xyz.com" >
+                </div>
+               
+                        <div class="student_department">
+                    <label for="department">Department:</label>
+                    <select name= "department" id="department">
+                        <option value= "electrical" class="service-small">Architecture Engineering</option>
+                        <option value= "civil" class="service-small">Civil Engineering</option>
+                        <option value= "computer" class="service-small">Computer Engineering</option>
+                        <option value= "electrical" class="service-small">Electrical Engineering</option>
+                        <option value= "elcetronic" class="service-small">Electronic Engineering</option>
+                        <option value= "mechanical" class="service-small">Mechanical Engineering</option>
+                        <option value= "chemical" class="service-small">Chemical Engineering</option>
+                        <option value= "industrail" class="service-small">Industrail Engineering</option>
+                       <option value= "software" class="service-small">Software Engineering</option>
+                  
+                    </select>
+                </div>
+
+                <div class="phone_number">
+                    <label for="phonenumber">Tel/Mobile:</label>
+                    <input type="tel" name="phonenumber" id="student_phonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+                
+                <h3>Permanent Address</h3>
+                <div class="p_state">
+                    <label for="pstate">State:</label>
+                    <input type="text" name="pstate" id="student_p_state" required>
+                </div>
+                <div class="p_city">
+                    <label for="pcity">City:</label>
+                    <input type="text" name="pcity" id="student_p_city" required>
+                </div>
+               
+                <div class="permanent_tel_mobile">
+                    <label for="phonenumber">Tel/Mobile:</label>
+                    <input type="tel" name="pphonenumber" id="pphonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+                
+                <h3>Temporary Address</h3>
+                
+                <div class="temp_state">
+                    <label for="tstate">State:</label>
+                    <input type="text" name="tstate" id="tstate" required>
+                </div>
+                <div class="temp_city">
+                    <label for="tcity">City:</label>
+                    <input type="text" name="tcity" id="tcity" required>
+                </div>
+              <div class="temp_tel_mobile">
+                    <label for="tphonenumber">Tel/Mobile:</label>
+                    <input type="tel" name="tphonenumber" id="tphonenumber" placeholder="XXX XXX XXXX" required>
+              </div>
+
+                <button class="register" type="submit">Register</button>
+            </center>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

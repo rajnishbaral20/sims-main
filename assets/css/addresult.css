@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.filter-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.filter-form select {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 200px;
+  height: 40px;
+  border: 1.5px solid rgba(1, 42, 85, 0.37);
+  border-radius: 12px;
+  font-size: 15px;
+  color: #000;
+  padding: 0 16px;
+  margin-right: 10px;
+}
+
+.filter-form button[type="submit"] {
+  background-color: #0065FF;
+  color: #EDFFE3;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 10px;
+}
+
+.filter-form button[type="submit"]:hover {
+  background-color: #172B4D;
+  color: #fff;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 75%;
+  table-layout: fixed;
+}
+
+table th {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px;
+}
+
+table td {
+  font-size: 18px;
+  text-align: left;
+  padding: 8px;
+  vertical-align: top;
+}
+
+th:first-child,
+td:first-child {
+  width: 150px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #d4d4d4;
+}
+
+#show_all_students_result_in_table th:nth-child(1) {
+  width: 100px;
+}
+
+#show_all_students_result_in_table th:nth-child(2) {
+  width: 200px;
+}
+
+#show_all_students_result_in_table th:nth-child(3) {
+  width: 150px;
+}
+
+.marks_field
+{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 35px;
+  height: 35px; /* Adjusted height */
+  border: 1.5px solid rgba(1, 42, 85, 0.37);
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.marks_field input:focus{
+  border: 1px solid #0065FF;
+}
+
+.marks_field input::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #033F9888;
+}
